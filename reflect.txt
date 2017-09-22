@@ -1,0 +1,4 @@
+Student Name:Xiaochen Wang
+Student ID: 015297153
+
+In this workshop let me review the knowledge of OOP244, such as open the file and read the file. But when I do the last time to pay the output of the string can not always match the results, which spent half a day to figure out.

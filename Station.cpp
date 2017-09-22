@@ -5,27 +5,29 @@ using namespace w2;
 using namespace std;
 
 Station::Station() {
-	passes[ADULT_PASS] = 0;
-	passes[STUDENT_PASS] = 0;
-	stationName = '\0';
+    passes[ADULT_PASS] = 0;
+    passes[STUDENT_PASS] = 0;
+    stationName = '\0';
 }
 
 Station::Station(istream & is) {
    string str;
    getline(is, str, ';');        // get station name
-   is.ignore();
+   //is.ignore();
    stationName = str;
+   //is.ignore();
    is >> passes[STUDENT_PASS];   // get number of student passes
-   is.ignore();
+   //is.ignore();
    is >> passes[ADULT_PASS];     // get number of adult passes
    is.ignore();
+   //cout<< stationName <<endl;
 }
 
 void Station::update() {
    cout << stationName << "\n";
    cout << " Student Passes sold : ";
    int student;
-   cin.clear();
+   //cin.clear();
    cin >> student;
    passes[STUDENT_PASS] -= student;
    cout << " Adult   Passes sold : ";
@@ -63,8 +65,8 @@ void Station::report() {
    cout << right << setw(6) << fixed << passes[ADULT_PASS];
    cout << endl;*/
 
-   cout << setw(17) << left << stationName  << setw(8) << right << passes[STUDENT_PASS]
-        << setw(6) << right << passes[ADULT_PASS] << endl;
+cout << setw(15) << left << stationName  << "   " << setw(7) << right << passes[STUDENT_PASS]
+        << " " << right << setw(5) << passes[ADULT_PASS] << endl;
 }
 
 void Station::write(ostream& os) {

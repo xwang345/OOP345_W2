@@ -1,4 +1,4 @@
-Script started on Fri 22 Sep 2017 04:33:38 AM EDT
+Script started on Fri 22 Sep 2017 11:31:51 AM EDT
 xwang345@matrix:~/OOP345/lab2> ws Stations.dat 
 
 Command Line : ws Stations.dat 
@@ -35,11 +35,11 @@ Bay
 
 Passes in Stock : Student Adult
 -------------------------------
-Spadina               30   200
-Bathurst              100   300
-Keele                  30   100
-Bay                   100   200
-xwang345@matrix:~/OOP345/lab2> exiexiexiexit[K
+Spadina               100   200
+Bathurst              200   300
+Keele                 100   100
+Bay                   200   200
+xwang345@matrix:~/OOP345/lab2> exit
 exit
 
-Script done on Fri 22 Sep 2017 04:34:27 AM EDT
+Script done on Fri 22 Sep 2017 11:32:37 AM EDT

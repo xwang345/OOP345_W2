@@ -7,7 +7,6 @@ using namespace std;
 Stations::Stations(char* fileName)
 {
    file = fileName;
-//   cout << "Stations(" << fileName << ")" << endl;
    fstream is(file, ios::in);
 
    if (is.is_open())
@@ -21,6 +20,7 @@ Stations::Stations(char* fileName)
          exit(2);
       }
       stationTable = new Station[stationAmount];
+      is.ignore();
       for (int i = 0; i < stationAmount; i++){
          stationTable[i] = Station(is);
       }
@@ -58,7 +58,7 @@ void Stations::update()
 {
    cout << endl;
    cout << "Passes Sold :" << endl;
-   cout << "-------------";
+   cout << "-------------\n";
    for (int i = 0; i < stationAmount; i++) {
       stationTable[i].update();
    }
@@ -68,7 +68,7 @@ void Stations::update()
 void Stations::restock()
 {
    cout << "Passes Added :" << endl;
-   cout << "--------------";
+   cout << "--------------\n";
    for (int i = 0; i < stationAmount; i++) {
       stationTable[i].restock();
    }
@@ -78,9 +78,8 @@ void Stations::restock()
 void Stations::report()
 {
    cout << "Passes in Stock : Student Adult" << endl;
-   cout << "-------------------------------" ;
+   cout << "-------------------------------" << endl;
    for (int i = 0; i < stationAmount; i++) {
       stationTable[i].report();
    }
 }
-
