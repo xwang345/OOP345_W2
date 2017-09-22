@@ -1,0 +1,10 @@
+
+In line number 38 of your output:
+The output should be:
+Spadina               100   200 
+But your output is: 
+Spadina               30   200
+                      ^
+----------------------|
+Professor's character ASCII code: hex(31), dec(49)
+un-matched character ASCII code: hex(33), dec(51)

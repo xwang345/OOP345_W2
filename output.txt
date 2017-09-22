@@ -1,0 +1,45 @@
+Script started on Fri 22 Sep 2017 04:33:38 AM EDT
+xwang345@matrix:~/OOP345/lab2> ws Stations.dat 
+
+Command Line : ws Stations.dat 
+
+Passes Sold :
+-------------
+Spadina
+ Student Passes sold : 5
+ Adult   Passes sold : 8
+Bathurst
+ Student Passes sold : 34
+ Adult   Passes sold : 52
+Keele
+ Student Passes sold : 21
+ Adult   Passes sold : 13
+Bay
+ Student Passes sold : 67
+ Adult   Passes sold : 65
+
+Passes Added :
+--------------
+Spadina
+ Student Passes added : 29
+ Adult   Passes added : 52
+Bathurst
+ Student Passes added : 113
+ Adult   Passes added : 61
+Keele
+ Student Passes added : 51
+ Adult   Passes added : 52
+Bay
+ Student Passes added : 109
+ Adult   Passes added : 107
+
+Passes in Stock : Student Adult
+-------------------------------
+Spadina               30   200
+Bathurst              100   300
+Keele                  30   100
+Bay                   100   200
+xwang345@matrix:~/OOP345/lab2> exiexiexiexit[K
+exit
+
+Script done on Fri 22 Sep 2017 04:34:27 AM EDT
